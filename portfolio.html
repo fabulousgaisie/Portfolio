@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <style>
+
+    @media screen and (min-width:1201px){
+        body {
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+        text-decoration: none;
+        color: black;
+        }
+
+        nav ul a:hover {
+        color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 10px;
+        }
+
+        #container{
+            display: flex;
+            width: 100%;
+        }
+
+        #session1 {
+            width:60%;
+            height:60vh;
+            color:white;
+            margin-top:5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+            background-image: url("/backgroundchange/_V9A9541.JPEG");
+            background-size: cover;
+        }
+
+        #session1 h1 {
+            color:red;
+            font-size: 55px;
+        }
+
+        #session1 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session1 button:hover{
+            background-color:red;
+            color:white;
+        }
+
+        #container-items {
+            width:40%;
+            color:white;
+            margin-top:5%;
+        }
+
+        #container-items a {
+            text-decoration: none;
+            color:white;
+        }
+
+        #container-items a:hover {
+            color:red;
+        }
+       
+
+        footer {
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:15px;
+            height:15px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            padding-right:15px;
+            margin: 0;
+        }
+
+    }
+    @media screen and (min-width:961px) and (max-width:1200px){
+
+        body {
+            width: 100%;
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+           text-decoration: none;
+           color: black;
+        }
+
+        nav ul a:hover {
+           color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 10px;
+        }
+
+        #container{
+            display: flex;
+            width: 100%;
+       
+        }
+
+        #session1 {
+            width:70%;
+            height:80vh;
+            color:white;
+            margin:10%;
+            background-image: url("/backgroundchange/_V9A9541.JPEG");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #session1 h1{
+            color:red;
+            font-size: 40px;
+        }
+
+        #session1 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session1 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+        footer {
+            color:white;
+            display: flex;
+            position: fixed;
+            bottom:0;
+            right:0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:15px;
+            height:15px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            padding-right:15px;
+            margin: 0;
+        }
+
+    }
+
+    @media screen and (max-width:960px) and (min-width: 600px){
+            body {
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+           text-decoration: none;
+           color: black;
+        }
+
+        nav ul a:hover {
+           color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 10px;
+        }
+
+        #container{
+            width:100%;
+            display: flex;
+       
+        }
+
+        #session1 {
+            width:90%;
+            height: 50vh;
+            color:white;
+            margin:5%;
+            background-image: url("/backgroundchange/_V9A9541.JPEG");
+            background-size: cover;
+        }
+
+        #session1 h1{
+            color:red;
+            font-size: 40px;
+        }
+
+        #session1 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session1 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+
+        footer {
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom:0;
+            right:0;
+            left: 0;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:15px;
+            height:15px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            padding-right:15px;
+            margin: 0;
+        }
+    }
+
+
+    @media screen and (max-width:599px) and (min-width: 490px){
+            body {
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+           text-decoration: none;
+           color: black;
+        }
+
+        nav ul a:hover {
+           color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 10px;
+        }
+
+        #container{
+            width:100%;
+            display: flex;
+
+        }
+
+        #session1 {
+            width:90%;
+            height: 40vh;
+            background-image: url("/backgroundchange/_V9A9541.JPEG");
+            background-size: cover;
+            color:white;
+            margin:5%;
+        }
+
+        #session1 h1 {
+            color:red;
+            font-size: 30px;
+        }
+
+        #session1 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+
+        #session1 button:hover{
+           background-color:red;
+           color:white;
+        }
+       
+        footer {
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom:0;
+            right:0;
+            left: 0;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:15px;
+            height:15px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            padding-right:15px;
+            margin: 0;
+        }
+    }
+
+
+    @media screen and (max-width:489px) and (min-width: 200px){
+            body {
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:2%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+           text-decoration: none;
+           color: black;
+        }
+
+        nav ul a:hover {
+           color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        #container{
+            width:100%;
+            display: block;
+        }
+
+        #session1 {
+            width:90%;
+            height: 30vh;
+            background-image: url("/backgroundchange/_V9A9541.JPEG");
+            background-size: cover;
+            color:white;
+            margin:5%;
+        }
+
+        #session1 h1 {
+            color:red;
+            font-size: 40px;
+        }
+
+        #session1 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+ 
+
+        #session1 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+        footer {
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom:0;
+            right:0;
+            left: 0;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:10px;
+            height:10px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            font-size: 10px;
+            padding-right:15px;
+            margin: 0;
+        }
+    }
+
+    
+
+
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="/portfolio.html"><li>Potfolio</li></a>
+            <a href=""><li>About me</li></a>
+            <a href=""><li>Contact</li></a>
+        </ul>
+    </nav>
+    <div id="container">
+        <div id="session1">
+        </div>
+
+        <div id="container-items">
+            <h1>My Portfolio</h1>
+            <ul>
+                <a onmouseover="testtt()" href="" ><li >Shop</li></a>
+                <a onmouseover="testt()"href=""><li>Church</li></a>
+                <a onmouseover="test()" href=""><li>Blog</li></a>
+            </ul>
+        </div> 
+          
+    </div>
+    
+    <footer>
+        <div id="instagram">
+            <img src="Images/instagram_3670274.png">
+            <p>@fabulousgaisie</p>
+        </div>
+        <div id="x">
+            <img src="Images/twitter_5968958.png">
+            <p>@fabulousgaisie</p>
+        </div>
+    </footer>
+
+
+    <script>
+        function change(elementid, word, index, count){
+            
+            document.getElementById(elementid).style.backgroundImage=word[index];
+            index++;
+            if (index===word.length){
+                index=0;  
+                count++;  
+            }     
+
+            
+            setTimeout(function(){
+                change(elementid, word, index, count);
+
+            },
+            10000)
+            
+        }
+
+        const elementid ="session1"
+        const wordlist =["url('/backgroundchange/321278319_3506482349677170_891178329516955075_n.jpg')","url('backgroundchange/321430355_458417126460487_4807586400812200942_n.jpg')","url('backgroundchange/321431428_3455853268074819_8726298530883029934_n.jpg')"]
+        change(elementid, wordlist, 0, 0);
+
+
+        function testtt(){
+            document.getElementById("session1").style.backgroundImage='url("backgroundchange/Screenshot 2023-12-31 at 6.12.08 AM.png")';
+        }
+
+        function testt(){
+            document.getElementById("session1").style.backgroundImage='url("backgroundchange/_V9A9541.JPEG")';
+        }
+
+        function test(){
+            document.getElementById("session1").style.backgroundImage='url("backgroundchange/Screenshot 2024-01-12 at 11.17.45 AM.png")';
+        }
+
+    </script>
+    
+</body>
+
+</html>

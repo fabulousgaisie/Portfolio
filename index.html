@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <style>
+
+    @media screen and (min-width:1201px){
+        body {
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+        text-decoration: none;
+        color: black;
+        }
+
+        nav ul a:hover {
+        color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 10px;
+        }
+
+        #container{
+            display: flex;
+            min-height: 80vh;
+
+        }
+
+        #session1 {
+            width:30%;
+            color:white;
+            margin-top:10%;
+            margin:3%;
+        }
+
+        #session1 h1, #session3 h1 {
+            color:red;
+            font-size: 55px;
+        }
+
+        #session1 button,#session3 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session2 button {
+            display: block;
+            width:100%;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session1 button:hover{
+        background-color:red;
+        color:white;
+        }
+        #session2 button:hover{
+        background-color:red;
+        color:white;
+        }
+
+        #session3 button:hover{
+        background-color:red;
+        color:white;
+        }
+
+
+
+        #session2 {
+            width:40%;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+        #session2 img {
+            width:80%;
+            height:60vh;
+        }
+
+        #session3 {
+            width:30%;
+            color:white;
+            margin-top:10%;
+            margin:3%;
+        }
+
+        footer {
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:15px;
+            height:15px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            padding-right:15px;
+            margin: 0;
+        }
+
+    }
+    @media screen and (min-width:961px) and (max-width:1200px){
+
+        body {
+            width: 100%;
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+           text-decoration: none;
+           color: black;
+        }
+
+        nav ul a:hover {
+           color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 10px;
+        }
+
+        #container{
+            display: flex;
+            min-height: 80vh;
+       
+        }
+
+        #session1 {
+            width:30%;
+            color:white;
+            margin-top:10%;
+            margin:3%;
+        }
+
+        #session1 h1, #session3 h1 {
+            color:red;
+            font-size: 40px;
+        }
+
+        #session1 button,#session3 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session2 button {
+            display: block;
+            width:100%;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session1 button:hover{
+           background-color:red;
+           color:white;
+        }
+        #session2 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+        #session3 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+
+
+        #session2 {
+            width:40%;
+            
+        }
+
+
+        #session2 img {
+            width:80%;
+            height:40vh;
+        }
+
+        #session3 {
+            width:30%;
+            color:white;
+            margin-top:10%;
+            margin:3%;
+        }
+
+        footer {
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:15px;
+            height:15px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            padding-right:15px;
+            margin: 0;
+        }
+
+    }
+
+    @media screen and (max-width:960px) and (min-width: 600px){
+            body {
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+           text-decoration: none;
+           color: black;
+        }
+
+        nav ul a:hover {
+           color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 10px;
+        }
+
+        #container{
+            width:100%;
+            display: flex;
+            min-height: 80vh;
+       
+        }
+
+        #session1 {
+            width:30%;
+            color:white;
+            margin-top:10%;
+            margin:3%;
+        }
+
+        #session1 h1, #session3 h1 {
+            color:red;
+            font-size: 40px;
+        }
+
+        #session1 button,#session3 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session2 button {
+            display: block;
+            width:100%;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session1 button:hover{
+           background-color:red;
+           color:white;
+        }
+        #session2 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+        #session3 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+
+
+        #session2 {
+            width:40%;
+            
+        }
+
+
+        #session2 img {
+            width:80%;
+            height:30vh;
+        }
+
+        
+
+        #session3 {
+            width:30%;
+            color:white;
+            margin-top:10%;
+            margin:3%;
+        }
+
+        footer {
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:15px;
+            height:15px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            padding-right:15px;
+            margin: 0;
+        }
+    }
+
+
+    @media screen and (max-width:599px) and (min-width: 490px){
+            body {
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+           text-decoration: none;
+           color: black;
+        }
+
+        nav ul a:hover {
+           color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 10px;
+        }
+
+        #container{
+            width:100%;
+            display: flex;
+            min-height: 80vh;
+       
+        }
+
+        #session1 {
+            width:30%;
+            color:white;
+            margin-top:10%;
+            margin:3%;
+        }
+
+        #session1 h1, #session3 h1 {
+            color:red;
+            font-size: 30px;
+        }
+
+        #session1 button,#session3 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session2 button {
+            display: block;
+            width:100%;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session1 button:hover{
+           background-color:red;
+           color:white;
+        }
+        #session2 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+        #session3 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+
+
+        #session2 {
+            width:40%;
+            
+        }
+
+
+        #session2 img {
+            width:80%;
+            height:30vh;
+        }
+
+        
+
+        #session3 {
+            width:30%;
+            color:white;
+            margin-top:10%;
+            margin:3%;
+        }
+
+        footer {
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:15px;
+            height:15px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            padding-right:15px;
+            margin: 0;
+        }
+    }
+
+
+    @media screen and (max-width:489px) and (min-width: 200px){
+            body {
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav {
+            background-color: white;
+            padding:2%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        nav ul a {
+           text-decoration: none;
+           color: black;
+        }
+
+        nav ul a:hover {
+           color: red;
+        }
+
+        nav ul a li {
+            display:inline;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        #container{
+            width:100%;
+            display: block;
+            min-height: 80vh;
+       
+        }
+
+        #session1 {
+            width:100%;
+            color:white;
+            margin-top:10%;
+            margin-bottom: 5%;
+            padding:2%;
+            text-wrap:wrap;
+        }
+
+        #session1 h1, #session3 h1 {
+            color:red;
+            font-size: 40px;
+        }
+
+        #session1 button,#session3 button {
+            display: block;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session2 button {
+            display: block;
+            width:90%;
+            border-radius: 10px;
+            padding:8px;
+            border-style: none;
+            transition: background-color 2s linear;
+        }
+
+        #session1 button:hover{
+           background-color:red;
+           color:white;
+        }
+        #session2 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+        #session3 button:hover{
+           background-color:red;
+           color:white;
+        }
+
+
+
+        #session2 {
+            width:100%;
+            color:white;
+            margin-top:10%;
+            margin-bottom:10%;
+            padding:2%;
+            
+        }
+
+
+        #session2 img {
+            width:80%;
+            height:30vh;
+        }
+
+        
+
+        #session3 {
+            width:100%;
+            color:white;
+            margin-top:10%;
+            margin-bottom:10%;
+            padding:2%;
+        }
+
+        footer {
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+
+        footer img {
+            display: inline;
+            width:15px;
+            height:15px;
+            margin-right:5px;
+            padding:2px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        footer div p {
+            float:right;
+            padding-right:15px;
+            margin: 0;
+        }
+    }
+
+    
+
+
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="/index.html"><li>Home</li></a>
+            <a href="/portfolio.html"><li>Potfolio</li></a>
+            <a href=""><li>About me</li></a>
+            <a href=""><li>Contact</li></a>
+        </ul>
+    </nav>
+    <div id="container">
+        <div id="session1">
+            <h1>Samuel Gaisie Asare</h1>
+            <p>Passionate and Self-driven <br>
+                Hardworking and a Team player
+                Proactive and Imaginative <br>
+                Always learning, adapting and upgrading
+            </p>
+            <button>More about me</button>
+        </div>
+
+        <div id="session2">
+            <img src="Images/sam.png" alt="A memoji of me">
+            <button>Hire me</button>
+        </div>
+
+        <div id="session3">
+            <h1>Front End Developer</h1>
+            <p>Front end developer who writes clean code and loves challenges<br>
+                "Not just about the code, but the solution to a problem, the process and the outcome"
+            </p>
+            <button>Potfolio</button>
+
+        </div>
+
+        
+    </div>
+    <footer>
+        <div id="instagram">
+            <img src="Images/instagram_3670274.png">
+            <p>@fabulousgaisie</p>
+        </div>
+        <div id="x">
+            <img src="Images/twitter_5968958.png">
+            <p>@fabulousgaisie</p>
+        </div>
+    </footer>
+
+    <div>
+        <h4 id="try" style="color:blue;">helo</h4>
+    </div>
+
+    <script>
+        function change(elementid, word, index, count){
+            
+            document.getElementById(elementid).innerHTML=word[index];
+            index++;
+            if (index===word.length && count<2){
+                index=0;  
+                count++;  
+            }     
+
+            if (count===2){
+                document.getElementById(elementid).innerHTML=word[0];
+            }
+            
+            setTimeout(function(){
+                change(elementid, word, index, count);
+
+            },
+            1000)
+            
+        }
+
+        const elementid ="try"
+        const wordlist =["best","better","best again"]
+        change(elementid, wordlist, 0, 0);
+
+    </script>
+    
+</body>
+
+</html>
